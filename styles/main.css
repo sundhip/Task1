@@ -861,3 +861,5 @@ footer .footer-content {
 .menu-btn.active span:nth-child(3) {
     transform: rotate(-45deg) translate(7px, -7px);
 }
+
+/* Responsive design finalized and verified on mobile devices */
