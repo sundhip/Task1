@@ -26,14 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Apply the saved theme on load
     if (currentTheme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
-        if (themeToggleBtn) {
-            themeToggleBtn.querySelector('.theme-icon').textContent = '☀️';
-        }
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        if (themeToggleBtn) {
-            themeToggleBtn.querySelector('.theme-icon').textContent = '🌙';
-        }
     }
 
     if (themeToggleBtn) {
@@ -41,11 +35,9 @@ document.addEventListener('DOMContentLoaded', () => {
             let theme = 'dark';
             if (document.documentElement.getAttribute('data-theme') === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'light');
-                themeToggleBtn.querySelector('.theme-icon').textContent = '☀️';
                 theme = 'light';
             } else {
                 document.documentElement.setAttribute('data-theme', 'dark');
-                themeToggleBtn.querySelector('.theme-icon').textContent = '🌙';
                 theme = 'dark';
             }
             localStorage.setItem('theme', theme);
