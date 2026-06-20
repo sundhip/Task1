@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Sundhip Manhooj</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <style>
+        /* Special styles for A4 Resume layout */
+        .resume-container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: var(--border-radius);
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .resume-header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .resume-name {
+            font-size: 2.25rem;
+            font-weight: 800;
+            color: var(--text-primary);
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        .resume-contact {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .resume-contact a {
+            color: var(--primary);
+            font-weight: 500;
+        }
+
+        .resume-section {
+            margin-bottom: 2rem;
+        }
+
+        .resume-section-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--card-border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resume-item {
+            margin-bottom: 1.25rem;
+        }
+
+        .resume-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            margin-bottom: 0.4rem;
+        }
+
+        .resume-item-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .resume-item-subtitle {
+            font-weight: 500;
+            color: var(--accent);
+            font-size: 0.95rem;
+        }
+
+        .resume-item-date {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        .resume-list {
+            padding-left: 1.25rem;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+        }
+
+        .resume-skills-grid {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .resume-skills-label {
+            font-weight: 700;
+            color: var(--text-primary);
+            min-width: 140px;
+        }
+
+        .resume-skills-val {
+            color: var(--text-secondary);
+        }
+
+        /* --- Print Styles --- */
+        @media print {
+            body {
+                background-color: #ffffff !important;
+                color: #000000 !important;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .resume-container {
+                border: none !important;
+                box-shadow: none !important;
+                padding: 0 !important;
+                margin: 0 !important;
+                background-color: #ffffff !important;
+                color: #000000 !important;
+                max-width: 100% !important;
+            }
+            .resume-name {
+                color: #000000 !important;
+            }
+            .resume-contact, .resume-list, .resume-skills-val {
+                color: #333333 !important;
+            }
+            .resume-contact a {
+                color: #111111 !important;
+                text-decoration: underline !important;
+            }
+            .resume-section-title {
+                color: #000000 !important;
+                border-bottom: 1.5px solid #000000 !important;
+            }
+            .resume-item-title {
+                color: #000000 !important;
+            }
+            .resume-item-subtitle {
+                color: #222222 !important;
+            }
+            .resume-item-date {
+                color: #444444 !important;
+            }
+            .resume-header {
+                border-bottom: 2px solid #000000 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Controls Banner (Hidden in Print) -->
+    <div class="no-print" style="background-color: var(--nav-bg); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--card-border); position: sticky; top: 0; z-index: 1000;">
+        <div style="max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <a href="index.html" class="btn btn-secondary" style="border-radius: 8px; padding: 0.5rem 1.25rem;">← Back to Portfolio</a>
+            <button onclick="window.print()" class="btn btn-primary" style="border-radius: 8px; padding: 0.5rem 1.5rem;">
+                🖨️ Print / Save as PDF
+            </button>
+        </div>
+    </div>
+
+    <!-- Resume Body -->
+    <div class="resume-container">
+        
+        <!-- Header -->
+        <div class="resume-header">
+            <div class="resume-name">SUNDHIP MANHOOJ</div>
+            <div class="resume-contact">
+                <span>Chennai, India</span>
+                <span>|</span>
+                <span>+91 9600050329</span>
+                <span>|</span>
+                <span><a href="mailto:sundhipmanhooj@gmail.com">sundhipmanhooj@gmail.com</a></span>
+                <span>|</span>
+                <span><a href="https://linkedin.com/in/sundhip" target="_blank" rel="noopener noreferrer">LinkedIn</a></span>
+                <span>|</span>
+                <span><a href="https://github.com/sundhip" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+                <span>|</span>
+                <span><a href="https://leetcode.com/sundhip" target="_blank" rel="noopener noreferrer">LeetCode</a></span>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-section">
+            <div class="resume-section-title">Education</div>
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">VIT Chennai</span>
+                    <span class="resume-item-date">2025 – 2029</span>
+                </div>
+                <div class="resume-item-subtitle">B.Tech – Computer Science Engineering</div>
+                <div style="font-size: 0.9rem; color: var(--text-secondary); margin-top: 0.25rem;">
+                    <em>Relevant Coursework: Data Structures & Algorithms, Object-Oriented Programming, Computer Networks</em>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="resume-section">
+            <div class="resume-section-title">Technical Skills</div>
+            <div class="resume-skills-grid">
+                <div class="resume-skills-label">Languages:</div>
+                <div class="resume-skills-val">Python, Java, C++</div>
+                
+                <div class="resume-skills-label">Web:</div>
+                <div class="resume-skills-val">HTML, CSS, JavaScript</div>
+                
+                <div class="resume-skills-label">Tools & Platforms:</div>
+                <div class="resume-skills-val">Git, GitHub</div>
+                
+                <div class="resume-skills-label">Core Areas:</div>
+                <div class="resume-skills-val">Data Structures & Algorithms, Problem Solving, OOP, Basic Electronics & Prototyping</div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div class="resume-section">
+            <div class="resume-section-title">Projects</div>
+            
+            <!-- Project 1 -->
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">AI-Based Organ Transplant Compatibility System</span>
+                    <span class="resume-item-date">2024</span>
+                </div>
+                <div class="resume-item-subtitle" style="font-size: 0.85rem; font-style: italic; color: var(--text-secondary);">Python, Scikit-learn, Pandas</div>
+                <ul class="resume-list" style="margin-top: 0.5rem;">
+                    <li>Built an ML classification pipeline using Scikit-learn to analyze donor-recipient medical records (blood type, HLA markers, organ vitals), predicting compatibility scores with ~85% accuracy on test data.</li>
+                    <li>Engineered a feature extraction module from structured health datasets, reducing manual matching effort by an estimated 40% by automating compatibility scoring.</li>
+                    <li>Designed a ranked output system that surfaces the most compatible donor-recipient pairs, enabling data-driven decision support for transplant coordinators.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Hackathon 2025 — Team Prototype</span>
+                    <span class="resume-item-date">2025</span>
+                </div>
+                <div class="resume-item-subtitle" style="font-size: 0.85rem; font-style: italic; color: var(--text-secondary);">Team of 4</div>
+                <ul class="resume-list" style="margin-top: 0.5rem;">
+                    <li>Collaborated with a 4-member team to design, build, and demo a working technical prototype within a 24-hour window, advancing to the first evaluation round among competing teams.</li>
+                    <li>Owned backend logic and REST API integration, structuring application state to support real-time interactions during live demo.</li>
+                    <li>Prepared and delivered a structured technical pitch, receiving positive evaluator feedback on solution clarity and feasibility.</li>
+                </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="resume-item">
+                <div class="resume-item-header">
+                    <span class="resume-item-title">Task Management CLI Tool</span>
+                    <span class="resume-item-date">2024</span>
+                </div>
+                <div class="resume-item-subtitle" style="font-size: 0.85rem; font-style: italic; color: var(--text-secondary);">Python</div>
+                <ul class="resume-list" style="margin-top: 0.5rem;">
+                    <li>Developed a command-line task manager in Python with full CRUD operations, priority tagging, and persistent JSON-based storage, supporting end-to-end task lifecycle management.</li>
+                    <li>Applied OOP principles (Task and TaskManager classes) to keep the codebase modular; implemented input validation and error handling, reducing runtime errors to near-zero during testing.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Achievements -->
+        <div class="resume-section">
+            <div class="resume-section-title">Achievements</div>
+            <ul class="resume-list">
+                <li><strong>Published Author</strong> — Independently authored and self-published a book on Amazon, managing the complete pipeline from writing and editing to final publication.</li>
+                <li><strong>Hackathon 2025</strong> — Advanced to the evaluation round among multiple competing teams, demonstrating rapid prototyping and collaborative problem-solving under time constraints.</li>
+                <li><strong>Active DSA Practitioner</strong> — Consistently solving algorithmic problems on LeetCode across arrays, recursion, and dynamic programming to strengthen core CS fundamentals.</li>
+            </ul>
+        </div>
+
+        <!-- Areas of Interest -->
+        <div class="resume-section" style="margin-bottom: 0;">
+            <div class="resume-section-title">Areas of Interest</div>
+            <div style="font-size: 0.95rem; color: var(--text-secondary); text-align: center; font-weight: 500;">
+                Software Development &bull; Backend Engineering &bull; AI & Machine Learning &bull; Building Real-World Projects
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Theme Control logic integration -->
+    <script src="js/menu.js"></script>
+</body>
+</html>

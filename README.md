@@ -44,6 +44,7 @@ portfolio-site/
 ├── index.html        # Home Page (Hero, Projects, Skills Preview)
 ├── about.html        # About Page (Education Timeline, Skills Categories, Achievements)
 ├── contact.html      # Contact Page (Contact form & Social Connect)
+├── resume.html       # Printable A4 Resume Page
 ├── README.md         # Documentation
 ├── styles/
 │   └── main.css      # Custom styles stylesheet
