@@ -3,10 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Sundhip Portfolio</title>
+    <title>About Me - Sundhip Portfolio</title>
+    <meta name="description" content="Learn more about Sundhip: B.Tech CSE student at VIT Chennai, robotics enthusiast, author, and developer. Education details, achievements, and comprehensive skills.">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>About Page Placeholder</h1>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Sundhip<span>.</span></a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="menu-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Drawer Navigation Menu -->
+        <ul class="nav-links-mobile">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- About Me Header -->
+        <section class="section-container" style="padding-top: 2rem; padding-bottom: 2rem;">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-intro-text">
+                    <p>
+                        I am <strong>Sundhip</strong>, a Computer Science Engineering student currently pursuing my B.Tech at <strong>VIT Chennai</strong>. I possess a strong passion for Artificial Intelligence, Machine Learning, Robotics, and Full Stack Web Development.
+                    </p>
+                    <p>
+                        I enjoy building clean, robust, and impactful digital solutions. Whether developing complex database systems like <strong>OrganXcell</strong>, crafting gamified platforms like <strong>EvolveAura</strong>, or designing microcontroller-based sensor systems, I strive to merge software engineering principles with intelligent systems.
+                    </p>
+                    <p>
+                        Beyond technical coding, I have diversified interests, including creative writing (having published my own book titled <em>Timine</em>), participating in hackathons, and playing the flute.
+                    </p>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container" style="border-radius: 16px;">
+                        <img src="images/vit.jpg" alt="VIT Chennai Campus View" class="hero-image" style="border-radius: 12px; width: 100%; height: 240px; object-fit: cover;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section-container" id="education" style="border-top: 1px solid var(--card-border);">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                
+                <!-- VIT Chennai -->
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - Present</div>
+                    <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+                    <div class="timeline-institution">Vellore Institute of Technology (VIT), Chennai</div>
+                    <p class="timeline-desc">
+                        Gaining deep knowledge in Data Structures, Algorithms, Software Engineering, Database Systems, Artificial Intelligence, and Robotics. Maintaining a strong academic performance with a <strong>CGPA of 8.08</strong>.
+                    </p>
+                </div>
+
+                <!-- Maharishi Vidya Mandir -->
+                <div class="timeline-item">
+                    <div class="timeline-date">Graduated 2023</div>
+                    <h3 class="timeline-title">Senior Secondary Schooling</h3>
+                    <div class="timeline-institution">Maharishi Vidya Mandir</div>
+                    <p class="timeline-desc">
+                        Completed 12th Grade under CBSE Board with a score of <strong>95%</strong> and 10th Grade with <strong>92%</strong>. Focused on Computer Science, Mathematics, and Physics.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Detailed Skills Section -->
+        <section class="section-container" id="skills-section" style="border-top: 1px solid var(--card-border);">
+            <h2 class="section-title">Detailed Skills</h2>
+            <div class="grid-3" style="gap: 2rem;">
+                
+                <!-- Programming Languages -->
+                <div class="card">
+                    <h3 class="skill-category-title">Programming</h3>
+                    <div class="skills-list-detail">
+                        <span class="tag">Python</span>
+                        <span class="tag">C</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="card">
+                    <h3 class="skill-category-title">Web Development</h3>
+                    <div class="skills-list-detail">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">React.js</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Platforms -->
+                <div class="card">
+                    <h3 class="skill-category-title">Tools & Frameworks</h3>
+                    <div class="skills-list-detail">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                        <span class="tag">VS Code</span>
+                        <span class="tag">Arduino IDE</span>
+                        <span class="tag">Figma</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="section-container" id="achievements" style="border-top: 1px solid var(--card-border);">
+            <h2 class="section-title">Key Achievements</h2>
+            <div class="achievements-grid">
+                
+                <!-- Achievement 1 -->
+                <div class="card achievement-card">
+                    <div class="achievement-icon">🤖</div>
+                    <div class="achievement-info">
+                        <h4>World Record Robotics Participation</h4>
+                        <p>Participated in global robotic design conventions, achieving world-record setting collaboration benchmarks.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="card achievement-card">
+                    <div class="achievement-icon">📚</div>
+                    <div class="achievement-info">
+                        <h4>Published Book: Timine</h4>
+                        <p>Authored and published a novel exploring creative science fiction and modern conceptual thinking.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="card achievement-card">
+                    <div class="achievement-icon">🎵</div>
+                    <div class="achievement-info">
+                        <h4>2nd Place – Flute Competition</h4>
+                        <p>Recognized for musical talent in classical instrument presentation, securing runner-up position.</p>
+                    </div>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="card achievement-card">
+                    <div class="achievement-icon">💻</div>
+                    <div class="achievement-info">
+                        <h4>ARC Night Hackathon Participant</h4>
+                        <p>Collaborated and coded overnight to create automated prototypes resolving system control issues.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Detail section (to support Home page link jumps) -->
+        <section class="section-container" id="projects-detail" style="border-top: 1px solid var(--card-border);">
+            <h2 class="section-title">Projects Overview</h2>
+            <div style="display: flex; flex-direction: column; gap: 2rem;">
+                
+                <div class="card" style="border-left: 4px solid var(--primary);">
+                    <h3 style="color: var(--primary); margin-bottom: 0.5rem;">OrganXcell</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        <strong>Organ Matching & Transplant Management System</strong>
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        OrganXcell is a comprehensive digital solution for medical networks. It secure-stores donor credentials, runs matching algorithm searches using HLA criteria and blood groups, and updates the recipient queues. The project avoids manual paperwork bottleneck delays, preventing organ expiration risks.
+                    </p>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                        <em>Tech Stack:</em> Python, Django, MySQL Database, HTML, CSS.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid var(--accent);">
+                    <h3 style="color: var(--accent); margin-bottom: 0.5rem;">EvolveAura</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        <strong>Gamified Self Improvement Platform</strong>
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        EvolveAura gamifies personal productivity. Users set daily goals, log tasks, and earn experience points to unlock profile avatar modifications and unique status badges. Built to keep young learners motivated using classic role-playing-game (RPG) loop aesthetics.
+                    </p>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                        <em>Tech Stack:</em> React.js, Node.js, Express, MongoDB.
+                    </p>
+                </div>
+
+                <div class="card" style="border-left: 4px solid var(--text-primary);">
+                    <h3 style="margin-bottom: 0.5rem;">Sensor Analysis Project</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 1rem;">
+                        <strong>Glass & Plastic Detection using Capacitive Sensors</strong>
+                    </p>
+                    <p style="margin-bottom: 1rem;">
+                        A robotics and materials sorting project. Utilizing physical microcontrollers, it processes dielectric changes from capacitive sensors to classify object materials. Useful in sorting recyclables for waste automation.
+                    </p>
+                    <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                        <em>Tech Stack:</em> C++, Arduino IDE, Embedded Electronics.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sundhip. All rights reserved.</p>
+            <p>Soft Nexis Task 1 - TaskFlow Developer Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Menu Toggle Script -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
