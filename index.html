@@ -3,10 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Sundhip Portfolio</title>
+    <title>Sundhip Portfolio - AI, Robotics & Web Developer</title>
+    <meta name="description" content="Professional portfolio of Sundhip, B.Tech CSE Student at VIT Chennai. Specializing in AI/ML, Robotics, and Full-Stack Web Development. Developer of OrganXcell and EvolveAura.">
+    <!-- Favicon link (optional) -->
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-    <h1>Home Page Placeholder</h1>
+
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">Sundhip<span>.</span></a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Button for Mobile -->
+            <button class="menu-btn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile Drawer Navigation Menu -->
+        <ul class="nav-links-mobile">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-tagline">Welcome to my space</p>
+                <h1>Hi, I'm <span class="gradient-text">Sundhip</span></h1>
+                <p class="hero-tagline" style="color: var(--text-primary); font-size: 1.35rem; text-transform: none; letter-spacing: normal; margin-bottom: 1.25rem;">
+                    B.Tech CSE Student at VIT Chennai
+                </p>
+                <p class="hero-description">
+                    Passionate about Artificial Intelligence, Robotics, Full Stack Web Development, and solving complex real-world problems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="contact.html" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-image-container">
+                    <img src="images/profile.jpg" alt="Sundhip Profile Photo" class="hero-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="section-container" id="projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid-3">
+                
+                <!-- Project 1: OrganXcell -->
+                <article class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/organxcell.png" alt="OrganXcell Interface Dashboard" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">OrganXcell</h3>
+                        <p class="project-description">
+                            A secure, end-to-end Organ Matching & Transplant Management System designed to streamline recipient queues and surgical matchmaking.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Django</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">HTML/CSS</span>
+                        </div>
+                        <a href="about.html#projects-detail" class="project-link">
+                            Learn More <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 2: EvolveAura -->
+                <article class="card project-card">
+                    <div class="project-img-wrapper">
+                        <img src="images/evolveaura.png" alt="EvolveAura Gamified Platform" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">EvolveAura</h3>
+                        <p class="project-description">
+                            A gamified self-improvement platform helping users track habits, level up their profile, earn achievements, and build positive routines.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">JS</span>
+                        </div>
+                        <a href="about.html#projects-detail" class="project-link">
+                            Learn More <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Project 3: Sensor Analysis -->
+                <article class="card project-card">
+                    <div class="project-img-wrapper">
+                        <div style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); width:100%; height:100%; display:flex; justify-content:center; align-items:center; border-bottom: 1px solid var(--card-border);">
+                            <span style="font-size: 3rem; color: var(--primary);">⚙️</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Sensor Analysis Project</h3>
+                        <p class="project-description">
+                            Glass & plastic material detection system using custom-calibrated capacitive sensors integrated with microcontrollers.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Sensors</span>
+                        </div>
+                        <a href="about.html#projects-detail" class="project-link">
+                            Learn More <span>→</span>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Skills Preview Section -->
+        <section class="section-container" id="skills">
+            <h2 class="section-title">Technical Expertise</h2>
+            <div class="skills-preview-list">
+                <span class="skill-badge">🐍 Python</span>
+                <span class="skill-badge">⚙️ C++</span>
+                <span class="skill-badge">☕ Java</span>
+                <span class="skill-badge">🌐 HTML</span>
+                <span class="skill-badge">🎨 CSS</span>
+                <span class="skill-badge">⚡ JavaScript</span>
+                <span class="skill-badge">⚛️ React</span>
+                <span class="skill-badge">🦄 Django</span>
+                <span class="skill-badge">🗄️ MySQL</span>
+                <span class="skill-badge">🐙 Git</span>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="about.html#skills-section" class="btn btn-secondary">View Detailed Skills</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Sundhip. All rights reserved.</p>
+            <p>Soft Nexis Task 1 - TaskFlow Developer Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- Menu Toggle and Alert Script -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
