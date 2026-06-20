@@ -76,16 +76,32 @@ To run this project locally, simply clone the repository and open any of the HTM
 
 ## Deployment
 
-This website is hosted live on GitHub Pages. To deploy updates:
+### Option 1: Netlify (Recommended)
+This website can be easily deployed to **Netlify** using any of the following methods:
 
-```bash
-git add .
-git commit -m "Deployment ready"
-git push -u origin main
-```
+- **GitHub Integration (Auto-redeploy on Push)**:
+  1. Log in to the [Netlify App Dashboard](https://app.netlify.com/).
+  2. Click **Add new site** -> **Import from an existing project**.
+  3. Choose **GitHub** and authorize access.
+  4. Select the `Task1` repository.
+  5. Leave the build settings blank (Build Command: empty, Publish Directory: `.` or root).
+  6. Click **Deploy Site**. Every time you run `git push`, Netlify will automatically build and publish your updates!
 
-Configure GitHub Pages under:
-`Settings` -> `Pages` -> Build and deployment -> branch: `main` -> folder: `/ (root)`.
+- **Netlify Drop (Zero Setup Drag & Drop)**:
+  1. Visit [Netlify Drop](https://app.netlify.com/drop).
+  2. Drag and drop the entire `E:\portfolio-site` folder directly into the browser upload box.
+
+- **Netlify CLI (Command Line)**:
+  1. Log in via terminal: `npx netlify login`
+  2. Initialize connection: `npx netlify init` (create or link a site)
+  3. Deploy to production: `npx netlify deploy --prod` (specify `.` as the publish directory)
+
+### Option 2: GitHub Pages
+To host using GitHub Pages, navigate to your repository at `https://github.com/sundhip/Task1` on GitHub:
+1. Go to **Settings** -> **Pages**.
+2. Under "Build and deployment", set the source to **Deploy from a branch**.
+3. Select the `main` branch and folder `/ (root)`.
+4. Click **Save**. Your site will be published at `https://sundhip.github.io/Task1/`.
 
 ---
 
