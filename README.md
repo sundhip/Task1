@@ -53,6 +53,7 @@ portfolio-site/
     ├── profile.jpg   # Developer profile photo
     ├── organxcell.png # OrganXcell project dashboard preview
     ├── evolveaura.png # EvolveAura app mockup preview
+    ├── sensor.jpg    # Sensor Analysis System preview
     └── vit.jpg       # VIT Chennai campus visual representation
 ```
 
