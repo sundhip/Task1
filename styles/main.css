@@ -862,4 +862,58 @@ footer .footer-content {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
+/* --- ADDED BLUEPRINT STYLES --- */
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.research-interests-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.25rem;
+    margin-top: 2rem;
+}
+
+.interest-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--text-primary);
+    transition: all var(--transition-speed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.interest-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px var(--primary-glow);
+    color: var(--primary);
+}
+
+.personal-statement {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-family: var(--font-heading);
+    font-style: italic;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+    .grid-4, .research-interests-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
 /* Responsive design finalized and verified on mobile devices */
